@@ -1,0 +1,10 @@
+# PoC3 端内 serve 配置 — 模型端点走 qemu NAT 别名回宿主 mock
+# 端内视角宿主 = 10.0.2.2 (用户网络栈); 真机形态改为狼腾正式端点域名
+model:
+  provider: custom
+  base_url: http://10.0.2.2:9911/v1
+  api_key: lt-poc-test-key
+  model: langteng-mock-1
+onboarding:
+  seen:
+    profile_build_offered: true

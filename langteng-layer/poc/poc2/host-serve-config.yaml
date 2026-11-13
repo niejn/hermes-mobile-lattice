@@ -1,0 +1,10 @@
+# PoC2 隔离配置 — 狼腾模拟端点 (OpenAI 兼容)
+# 用 HERMES_CONFIG 指向本文件, 避免触碰真实 ~/.hermes/config.yaml
+model:
+  provider: custom
+  base_url: http://127.0.0.1:9911/v1
+  api_key: lt-poc-test-key
+  model: langteng-mock-1
+onboarding:
+  seen:
+    profile_build_offered: true

@@ -1,0 +1,2 @@
+# 品牌化构建副本 (git archive 导出 + patch 产物, 每次构建重建)
+build/hermes-mobile-branded/

@@ -1,0 +1,8 @@
+# 狼腾自研模型端点 — 直连模板
+# 语义 (PoC2a 实证 2026-11-13): provider=custom 走 OpenAI 兼容 /v1/chat/completions,
+# 端点硬性要求: SSE 流式必须 (stream:true 专线), 流式 tool_calls 分片, /v1/models 清单可选
+model:
+  provider: custom
+  base_url: https://api.langteng.example/v1   # TODO: 替换狼腾正式域名
+  api_key: ${LANGTENG_API_KEY}                # 由 APK 壳注入, 不落盘明文
+  model: langteng-flagship                    # TODO: 替换正式模型 ID

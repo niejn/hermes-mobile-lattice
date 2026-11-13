@@ -1,0 +1,7 @@
+# Gemini 中转站模板 (经中转的 Google 模型)
+# 语义: provider=gemini + base_url 覆盖即走中转; 中转需同样满足 SSE 流式 + tool_calls 分片
+model:
+  provider: gemini
+  base_url: https://gemini-relay.langteng.example/v1   # TODO: 中转站地址
+  api_key: ${LANGTENG_RELAY_KEY}
+  model: gemini-2.5-pro                                 # TODO: 按中转站实际支持调整
